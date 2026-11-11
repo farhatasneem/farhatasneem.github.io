@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data and Codes · Farha Tasneem</title>
+<meta name="description" content="Farha Tasneem: economist and Research Analyst at the Bangladesh Institute of Development Studies (BIDS). Development economics, climate change, and spatial and remote-sensing data in Bangladesh.">
+<link rel="canonical" href="https://farhatasneem.github.io/data-code.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>
+/* Apply a saved theme choice before the first paint, so the page never flashes. */
+(function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="topline">
+      <div style="min-width:0">
+        <p class="name"><a href="index.html">Farha Tasneem</a></p>
+        <p class="tag">Research Analyst, Bangladesh Institute of Development Studies (BIDS)</p>
+      </div>
+      <button class="theme-btn" id="theme-btn" aria-label="Switch between light and dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6 6l1.4 1.4M16.6 16.6L18 18M18 6l-1.4 1.4M7.4 16.6L6 18"/><circle cx="12" cy="12" r="4"/></svg><span>Theme</span>
+      </button>
+    </div>
+    <nav>
+<a href="index.html">Home</a>
+<a href="research.html">Research</a>
+<a href="data-code.html" aria-current="page">Data and Codes</a>
+<a href="education.html">Education</a>
+<a href="activities.html">Activities</a>
+<a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Data and codes</h1>
+    <p>Replication packages for my papers, and datasets built along the way that are useful on
+    their own. Everything runs end to end from raw inputs, and each repository has a README
+    describing the data sources, the order the scripts run in, and what the outputs are. <span class="todo">Replace the # links below with your repository URLs once they are public.</span></p>
+    <div class="">
+      <h2>Replication packages</h2>
+      <div class="mark"></div>
+      <ul class="refs">
+      <li>
+        <p class="repo-name">coastal-salinity-replication</p>
+        <p class="item-body">Replication package for <em>Coastal Salinity and Economic Development</em>: panel construction, the salinity index, and the estimation and figures.</p>
+        <div class="chips" style="margin-top:9px"><span class="chip chip-sm">Stata</span><span class="chip chip-sm">Python</span></div>
+        <p class="item-links"><a href="#">Repository</a></p>
+      </li>
+      <li>
+        <p class="repo-name">worldpop-bbs-validation</p>
+        <p class="item-body">Validates WorldPop gridded population estimates against the Bangladesh Bureau of Statistics 2022 census at district level, and documents systematic overestimation in the Chittagong Hill Tracts districts. Includes a complete Stata replication of the analysis.</p>
+        <div class="chips" style="margin-top:9px"><span class="chip chip-sm">Stata</span><span class="chip chip-sm">Python</span><span class="chip chip-sm">GeoPandas</span></div>
+        <p class="item-links"><a href="#">Repository</a></p>
+      </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Datasets</h2>
+      <div class="mark"></div>
+      <ul class="refs">
+      <li>
+        <p class="repo-name">bangladesh-ntl-panel</p>
+        <p class="item-body">A union-year night-time lights panel for Bangladesh, built from VIIRS monthly composites with zonal statistics over union boundaries. A reusable base layer for any project needing night-time luminosity at union level.</p>
+        <div class="chips" style="margin-top:9px"><span class="chip chip-sm">Python</span><span class="chip chip-sm">rasterio</span><span class="chip chip-sm">rasterstats</span><span class="chip chip-sm">GeoPandas</span></div>
+        <p class="item-links"><a href="#">Repository</a></p>
+      </li>
+      <li>
+        <p class="repo-name">bbs-population-pyramids</p>
+        <p class="item-body">Extraction pipeline that turns the population pyramids in the 2011 and 2022 BBS district reports into tidy age-sex tables.</p>
+        <div class="chips" style="margin-top:9px"><span class="chip chip-sm">Python</span><span class="chip chip-sm">pdfplumber</span><span class="chip chip-sm">pdftotext</span></div>
+        <p class="item-links"><a href="#">Repository</a></p>
+      </li>
+      <li>
+        <p class="repo-name">bd-industrial-zones</p>
+        <p class="item-body">A geospatial dataset of Bangladesh&rsquo;s industrial zones &mdash; export processing zones, special economic zones and BSCIC estates &mdash; with locations matched to administrative boundaries.</p>
+        <div class="chips" style="margin-top:9px"><span class="chip chip-sm">QGIS</span><span class="chip chip-sm">PyQGIS</span><span class="chip chip-sm">GeoPandas</span></div>
+        <p class="item-links"><a href="#">Repository</a></p>
+      </li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Tools I work with</h2>
+      <div class="mark"></div>
+      <div class="chips">
+        <span class="chip">Stata</span>
+        <span class="chip">Python</span>
+        <span class="chip">QGIS and PyQGIS</span>
+        <span class="chip">Google Earth Engine</span>
+        <span class="chip">GeoPandas</span>
+        <span class="chip">rasterio</span>
+        <span class="chip">rasterstats</span>
+        <span class="chip">LaTeX</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Farha Tasneem &middot; Last updated November 2026 &middot; <a href="cv.pdf">CV (PDF)</a></div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById("theme-btn");
+  if (!btn) { return; }
+  btn.addEventListener("click", function () {
+    var set = document.documentElement.getAttribute("data-theme");
+    var dark = set ? set === "dark"
+      : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    var next = dark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
