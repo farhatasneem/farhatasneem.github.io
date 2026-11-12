@@ -55,7 +55,7 @@ body {
   line-height: 1.68;
   -webkit-text-size-adjust: 100%;
 }
-.wrap { max-width: 50rem; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 62rem; margin: 0 auto; padding: 0 32px; }
 
 /* ── header ── */
 header { border-bottom: 1px solid var(--rule); padding: 32px 0 16px; }
@@ -96,14 +96,14 @@ p { margin: 0 0 14px; }
 /* ── hero ── */
 .hero { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
 .photo {
-  flex: none; width: 150px; height: 150px; border-radius: 50%;
-  background: var(--chip); border: 1px dashed var(--rule);
+  flex: none; width: 210px; height: 210px; border-radius: 50%;
+  background: var(--chip); border: 1px solid var(--rule);
   display: flex; align-items: center; justify-content: center;
   text-align: center; font-size: 11.5px; color: var(--muted);
   padding: 10px; overflow: hidden;
 }
 .photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
-.hero-text { flex: 999 1 17rem; min-width: 0; }
+.hero-text { flex: 999 1 20rem; min-width: 0; max-width: 42rem; }
 
 /* ── lists ── */
 ul.refs { list-style: none; padding: 0; margin: 0; }
@@ -141,7 +141,7 @@ li, p, h1, h2, .item-title { overflow-wrap: anywhere; }
   header { padding-top: 24px; }
   .name { font-size: 23px; }
   h1 { font-size: 26px; }
-  .photo { width: 112px; height: 112px; }
+  .photo { width: 150px; height: 150px; }
   main { padding-top: 28px; }
 }
 
