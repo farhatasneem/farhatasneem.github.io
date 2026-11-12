@@ -156,17 +156,17 @@ li, p, h1, h2, .item-title { overflow-wrap: anywhere; }
 
 /* ── contact: brand icon links ──────────────────────────────────────
    Icons are Font Awesome Free 7 brand marks (fontawesome.com), CC BY 4.0.
-   They take their colour from --accent and need no stylesheet or CDN. */
-.icon-row { display: flex; flex-wrap: wrap; gap: 10px; }
+   They take their colour from --accent and need no stylesheet or CDN.
+   The glyph is 20px; the 12px padding makes the clickable area 44px,
+   which is the minimum comfortable touch target. Shrink the glyph if
+   you want them smaller still, but leave the padding alone. */
+.icon-row { display: flex; flex-wrap: wrap; gap: 6px; margin-left: -12px; }
 .icon-link {
-  width: 48px; height: 48px; border-radius: 12px;
+  padding: 12px; border-radius: 8px;
   display: inline-flex; align-items: center; justify-content: center;
-  color: var(--accent); background: var(--chip);
-  border: 1px solid var(--rule); text-decoration: none;
-  transition: background .15s ease, border-color .15s ease;
+  color: var(--accent); text-decoration: none;
+  transition: color .15s ease, background .15s ease;
 }
-.icon-link svg { height: 21px; width: auto; display: block; }
-.icon-link:hover, .icon-link:focus-visible {
-  background: var(--accent); color: var(--bg); border-color: var(--accent);
-}
-.icon-link:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+.icon-link svg { height: 20px; width: auto; display: block; }
+.icon-link:hover, .icon-link:focus-visible { color: var(--accent2); background: var(--chip); }
+.icon-link:focus-visible { outline: 2px solid var(--accent2); outline-offset: 1px; }
